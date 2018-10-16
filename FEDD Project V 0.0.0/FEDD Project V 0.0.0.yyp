@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "43b5d379-d68e-4a07-9b07-fa2321da43e6",
+            "Value": {
+                "id": "a0e077fe-ec1d-4854-a1b2-397c0c4baf4f",
+                "resourcePath": "objects\\obj_correctAns\\obj_correctAns.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4a2f99ec-44c4-40f8-bd7b-d8e78e1df40a",
             "Value": {
                 "id": "95c049d2-e600-4f1b-943a-c1a335c17bac",
@@ -159,6 +167,14 @@
             }
         },
         {
+            "Key": "58f7441d-17b9-4c2d-9b25-02cb12e4cc24",
+            "Value": {
+                "id": "937eceb1-f555-41d6-bb86-0f834b3a419b",
+                "resourcePath": "objects\\obj_incorrectAns\\obj_incorrectAns.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5c8c22f2-7ee4-4ba4-9b8d-bbdce7d53369",
             "Value": {
                 "id": "b6cba4c6-0427-4d40-be45-a7218a086884",
@@ -180,6 +196,14 @@
                 "id": "cae3f0e8-a759-4065-bb98-a655837a4b84",
                 "resourcePath": "sprites\\spr_DifNormal\\spr_DifNormal.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "725de5d4-32ac-42ef-b13b-971a9564ec31",
+            "Value": {
+                "id": "d7d41c52-0073-40d6-9c3f-c4b3744ef6fb",
+                "resourcePath": "objects\\obj_gameManager\\obj_gameManager.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -311,6 +335,14 @@
             }
         },
         {
+            "Key": "bcb9bb01-a95b-45f4-af80-85ea792e37be",
+            "Value": {
+                "id": "d74b9eda-e933-40b9-8e73-fc17afb4a4e1",
+                "resourcePath": "sprites\\spr_bigrock\\spr_bigrock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bf12f92d-7da0-4798-b509-700e7bf12470",
             "Value": {
                 "id": "5f0254fa-bd62-4ff1-bedf-c270ca3c72f5",
@@ -380,6 +412,14 @@
                 "id": "48677d52-24a0-489a-81c3-1448a4b4d07d",
                 "resourcePath": "sprites\\spr_lvlAdd\\spr_lvlAdd.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "de924acb-32b3-4334-828f-4122ecddff6a",
+            "Value": {
+                "id": "9c9f3d41-5756-46a3-8f01-70df742ee710",
+                "resourcePath": "fonts\\font_Score\\font_Score.yy",
+                "resourceType": "GMFont"
             }
         },
         {

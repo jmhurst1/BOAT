@@ -8,30 +8,7 @@ draw_set_font(font_Question);
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
 /// @DnDHash : 1541037C
+/// @DnDArgument : "x" "room_width/2 - 80 "
 /// @DnDArgument : "caption" ""
 /// @DnDArgument : "var" "string(operand1) + "+" + string(operand2) + "= ?""
-draw_text(0, 0,  + string(string(operand1) + "+" + string(operand2) + "= ?"));
-
-/// @DnDAction : YoYo Games.Drawing.Draw_Value
-/// @DnDVersion : 1
-/// @DnDHash : 4402264D
-/// @DnDArgument : "y" "40"
-/// @DnDArgument : "caption" ""
-/// @DnDArgument : "var" "solutionCorrect"
-draw_text(0, 40,  + string(solutionCorrect));
-
-/// @DnDAction : YoYo Games.Drawing.Draw_Value
-/// @DnDVersion : 1
-/// @DnDHash : 09A71664
-/// @DnDArgument : "y" "80"
-/// @DnDArgument : "caption" ""
-/// @DnDArgument : "var" "solutionIncorrect1"
-draw_text(0, 80,  + string(solutionIncorrect1));
-
-/// @DnDAction : YoYo Games.Drawing.Draw_Value
-/// @DnDVersion : 1
-/// @DnDHash : 7CC99079
-/// @DnDArgument : "y" "120"
-/// @DnDArgument : "caption" ""
-/// @DnDArgument : "var" "solutionIncorrect2"
-draw_text(0, 120,  + string(solutionIncorrect2));
+draw_text(room_width/2 - 80 , 0,  + string(string(operand1) + "+" + string(operand2) + "= ?"));
