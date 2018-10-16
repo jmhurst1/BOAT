@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "0c26611f-9dde-459b-924a-ae54fa833d49",
+            "Value": {
+                "id": "eef3ebf3-f3df-4f02-83cd-fabeedd68ead",
+                "resourcePath": "objects\\obj_lvlSubtract\\obj_lvlSubtract.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1117df19-43d0-446c-84a6-a2e5636d2fff",
             "Value": {
                 "id": "c257e499-6dc0-483d-967f-04caef5fb883",
@@ -92,6 +100,22 @@
                 "id": "646d44ab-f83e-4bea-a3ed-1fe2374834fb",
                 "resourcePath": "rooms\\rm_menu\\rm_menu.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "39ffd737-abb9-471a-826a-70605bb30dce",
+            "Value": {
+                "id": "bcedc362-85f2-4d3c-b335-4066fb3a3cab",
+                "resourcePath": "sprites\\spr_lvlMultiply\\spr_lvlMultiply.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3a743de4-af39-47f1-9654-6f297ae5387d",
+            "Value": {
+                "id": "a42ba5a3-24f0-4811-83ec-5fc3d1360842",
+                "resourcePath": "objects\\obj_Variables\\obj_Variables.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -175,6 +199,14 @@
             }
         },
         {
+            "Key": "7c3faf20-ac58-4ca3-8078-2a674cf1a626",
+            "Value": {
+                "id": "17a1d60f-414d-46e6-af29-cb82a1af1582",
+                "resourcePath": "fonts\\font_Question\\font_Question.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "806fdfe8-3e41-4bb6-96f5-e4d66ab2f6a7",
             "Value": {
                 "id": "6c48aff1-5759-43dc-8798-43744e57a853",
@@ -196,6 +228,22 @@
                 "id": "eac29e53-fd9e-4be0-8385-7062193a2ce0",
                 "resourcePath": "views\\8c49bd61-e4cc-422a-8ef2-c401e58a62c1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8fa97495-bd55-46d5-b083-792aabe11813",
+            "Value": {
+                "id": "c03574c1-b5ac-4ba6-bb59-21a5b6e1bc6c",
+                "resourcePath": "objects\\obj_lvlMultiply\\obj_lvlMultiply.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "90996bb4-4031-43a2-afbf-286e2be5222b",
+            "Value": {
+                "id": "1c234d11-ae5e-40be-b016-7d8094673851",
+                "resourcePath": "objects\\obj_lvlDivide\\obj_lvlDivide.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -223,11 +271,27 @@
             }
         },
         {
+            "Key": "a266b37f-e13d-44e2-b104-e93616219e4a",
+            "Value": {
+                "id": "30c2bdb3-a6b6-4a47-833c-0a6619c451a6",
+                "resourcePath": "sprites\\spr_lvlDivide\\spr_lvlDivide.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a5945fea-66c1-45bc-8902-b07cbcc30014",
             "Value": {
                 "id": "872e8abe-5b5c-4a7e-8af3-8340e804ff43",
                 "resourcePath": "rooms\\rm_howToPlay\\rm_howToPlay.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "a702ecef-da7d-4bd2-ae77-f10b3a6a4cf2",
+            "Value": {
+                "id": "5c7508d8-b58f-4de0-9d89-c2f8b30d3e10",
+                "resourcePath": "objects\\obj_lvlAdd\\obj_lvlAdd.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -251,6 +315,22 @@
             "Value": {
                 "id": "5f0254fa-bd62-4ff1-bedf-c270ca3c72f5",
                 "resourcePath": "sprites\\spr_DifPractice\\spr_DifPractice.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c07aedc3-cb22-4e1c-950c-8af499f9aca4",
+            "Value": {
+                "id": "f6d58959-1708-4b80-ac2a-f547c31dc854",
+                "resourcePath": "objects\\obj_Question\\obj_Question.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c2d00064-6997-40df-b8fa-1f4cf46f1600",
+            "Value": {
+                "id": "b82a73c9-dab5-4b64-b3c7-fc8dfa517b71",
+                "resourcePath": "sprites\\spr_lvlSubtract\\spr_lvlSubtract.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -292,6 +372,14 @@
                 "id": "dca39c65-11b7-4356-bd80-120182b31e54",
                 "resourcePath": "rooms\\rm_title\\rm_title.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "da6731c0-d951-459e-bb50-739e656efc6d",
+            "Value": {
+                "id": "48677d52-24a0-489a-81c3-1448a4b4d07d",
+                "resourcePath": "sprites\\spr_lvlAdd\\spr_lvlAdd.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
