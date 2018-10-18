@@ -5,23 +5,6 @@
 /// @DnDArgument : "value" "rm_level"
 if(room == rm_level)
 {
-	/// @DnDAction : YoYo Games.Drawing.Set_Font
-	/// @DnDVersion : 1
-	/// @DnDHash : 604ED5D2
-	/// @DnDParent : 0BC3FFA2
-	/// @DnDArgument : "font" "font_Score"
-	/// @DnDSaveInfo : "font" "de924acb-32b3-4334-828f-4122ecddff6a"
-	draw_set_font(font_Score);
-
-	/// @DnDAction : YoYo Games.Drawing.Draw_Value
-	/// @DnDVersion : 1
-	/// @DnDHash : 025DE976
-	/// @DnDParent : 0BC3FFA2
-	/// @DnDArgument : "x" "room_width - 128"
-	/// @DnDArgument : "caption" ""Score: ""
-	/// @DnDArgument : "var" "score"
-	draw_text(room_width - 128, 0, string("Score: ") + string(score));
-
 	/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
 	/// @DnDVersion : 1
 	/// @DnDHash : 66A7C0B9
@@ -84,4 +67,22 @@ if(room == rm_title)
 	/// @DnDParent : 10007743
 	/// @DnDArgument : "var" "score"
 	score = 0;
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 76A18566
+	/// @DnDParent : 10007743
+	/// @DnDArgument : "expr" "3"
+	/// @DnDArgument : "var" "lives"
+	lives = 3;
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
+	/// @DnDVersion : 1
+	/// @DnDHash : 2A45F7AB
+	/// @DnDParent : 10007743
+	/// @DnDArgument : "x" "room_width / 2"
+	/// @DnDArgument : "y" "room_height / 2"
+	/// @DnDArgument : "sprite" "spr_Title"
+	/// @DnDSaveInfo : "sprite" "4a2f99ec-44c4-40f8-bd7b-d8e78e1df40a"
+	draw_sprite(spr_Title, 0, room_width / 2, room_height / 2);
 }
