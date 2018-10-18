@@ -16,25 +16,27 @@ if(x > room_width)
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 1F696E90
-/// @DnDArgument : "code" "if(x > 650){$(13_10)	if(y < 256 and y > 128){$(13_10)		y -= 1;$(13_10)	}$(13_10)	else if(y < 128){$(13_10)		y += 1;$(13_10)	}$(13_10)	else if(y >= 256 && y < 384){$(13_10)		y += 1;$(13_10)	}$(13_10)	else if(y > 384 && y < 512){$(13_10)		y -= 1;$(13_10)	}$(13_10)	else if(y >= 512 && y < 640){$(13_10)		y += 1;$(13_10)	}$(13_10)	else if(y > 640 && y < 768){$(13_10)		y -= 1;$(13_10)	}$(13_10)}$(13_10)		"
+/// @DnDArgument : "code" "$(13_10)$(13_10)if(x > 650){$(13_10)	if(y < 256 and y > 128){$(13_10)		y -= speed;$(13_10)	}$(13_10)	else if(y < 128){$(13_10)		y += speed;$(13_10)	}$(13_10)	else if(y >= 256 && y < 384){$(13_10)		y += speed;$(13_10)	}$(13_10)	else if(y > 384 && y < 512){$(13_10)		y -= speed;$(13_10)	}$(13_10)	else if(y >= 512 && y < 640){$(13_10)		y += speed;$(13_10)	}$(13_10)	else if(y > 640 && y < 768){$(13_10)		y -= speed;$(13_10)	}$(13_10)}$(13_10)		"
+
+
 if(x > 650){
 	if(y < 256 and y > 128){
-		y -= 1;
+		y -= speed;
 	}
 	else if(y < 128){
-		y += 1;
+		y += speed;
 	}
 	else if(y >= 256 && y < 384){
-		y += 1;
+		y += speed;
 	}
 	else if(y > 384 && y < 512){
-		y -= 1;
+		y -= speed;
 	}
 	else if(y >= 512 && y < 640){
-		y += 1;
+		y += speed;
 	}
 	else if(y > 640 && y < 768){
-		y -= 1;
+		y -= speed;
 	}
 }
 
