@@ -28,3 +28,13 @@ draw_text(0, 0, string("Lives: ") + string(lives));
 /// @DnDArgument : "sprite" "spr_exit"
 /// @DnDSaveInfo : "sprite" "08091b3c-96c5-49be-a2ef-aa9423d6b17d"
 draw_sprite(spr_exit, 0, 16, 16);
+
+/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
+/// @DnDVersion : 1
+/// @DnDHash : 1516EC7A
+/// @DnDArgument : "x" "32"
+/// @DnDArgument : "y" "700"
+/// @DnDArgument : "sprite" "spr_hearts"
+/// @DnDArgument : "image" "27"
+/// @DnDSaveInfo : "sprite" "c39ad234-235f-454d-930b-0cf6841303f1"
+draw_sprite(spr_hearts, 27, 32, 700);

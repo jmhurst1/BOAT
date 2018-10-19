@@ -8,7 +8,7 @@ draw_set_font(font_Question);
 /// @DnDAction : YoYo Games.Drawing.Draw_Value
 /// @DnDVersion : 1
 /// @DnDHash : 1541037C
-/// @DnDArgument : "x" "room_width/2 - 80 "
+/// @DnDArgument : "x" "432 "
 /// @DnDArgument : "caption" ""
 /// @DnDArgument : "var" "string(operand1) + "+" + string(operand2) + "= ?""
-draw_text(room_width/2 - 80 , 0,  + string(string(operand1) + "+" + string(operand2) + "= ?"));
+draw_text(432 , 0,  + string(string(operand1) + "+" + string(operand2) + "= ?"));
