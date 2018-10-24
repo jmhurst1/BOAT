@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0d71d5da-5b9c-468c-a6e2-77998e7acf2a",
+            "Value": {
+                "id": "1a0c2767-139f-4c79-8302-da041ff9c426",
+                "resourcePath": "objects\\obj_rockObstacle\\obj_rockObstacle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1117df19-43d0-446c-84a6-a2e5636d2fff",
             "Value": {
                 "id": "c257e499-6dc0-483d-967f-04caef5fb883",
@@ -196,6 +204,14 @@
                 "id": "55dcb072-91c2-4b1a-b406-7f383affe5af",
                 "resourcePath": "views\\74e73219-7bc3-44cc-96f9-7370035381c5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "76d4eb6d-f7a1-4d6f-9311-72a8a2b63406",
+            "Value": {
+                "id": "1f8002ae-1587-45cf-bda8-3871bd557165",
+                "resourcePath": "sprites\\spr_WrongPath\\spr_WrongPath.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -460,6 +476,14 @@
                 "id": "67766489-def7-4212-9ef3-a04608f9f7e5",
                 "resourcePath": "objects\\obj_ui\\obj_ui.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fd864861-db7e-4ae3-9df5-de97dd168347",
+            "Value": {
+                "id": "d413b44a-a914-44df-b896-6e3f2972e1e3",
+                "resourcePath": "fonts\\font_MenuSmall\\font_MenuSmall.yy",
+                "resourceType": "GMFont"
             }
         }
     ],
