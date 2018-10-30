@@ -1,10 +1,3 @@
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 621916BB
-/// @DnDArgument : "expr" "25"
-/// @DnDArgument : "var" "global.victoryThreshold"
-global.victoryThreshold = 25;
-
 /// @DnDAction : YoYo Games.Instances.Sprite_Image_Alpha
 /// @DnDVersion : 1
 /// @DnDHash : 289145AB
@@ -34,7 +27,7 @@ with(obj_DIfNormal) {
 /// @DnDVersion : 1
 /// @DnDHash : 32E701CF
 /// @DnDApplyTo : a15fc56a-4adf-4c96-95ae-8b13f2e89b4e
-with(obj_DifPractice) {
+with(obj_DifEasy) {
 	/// @DnDAction : YoYo Games.Instances.Sprite_Image_Alpha
 	/// @DnDVersion : 1
 	/// @DnDHash : 3FC6664A

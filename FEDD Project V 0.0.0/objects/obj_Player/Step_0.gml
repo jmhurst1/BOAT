@@ -81,13 +81,13 @@ if(x > room_width)
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 1F696E90
-/// @DnDArgument : "code" "if(x > 650){$(13_10)	if(abs(y-128)<5){$(13_10)		y = 128$(13_10)	} else if (abs(y-384)<5){$(13_10)		y = 384$(13_10)	} else if (abs(y-640)<5){$(13_10)		y = 640$(13_10)	} else {$(13_10)	$(13_10)		if(y < 256 and y > 128){$(13_10)			y -= speed;$(13_10)		}$(13_10)		else if(y < 128){$(13_10)			y += speed;$(13_10)		}$(13_10)		else if(y >= 256 && y < 384){$(13_10)			y += speed;$(13_10)		}$(13_10)		else if(y > 384 && y < 512){$(13_10)			y -= speed;$(13_10)		}$(13_10)		else if(y >= 512 && y < 640){$(13_10)			y += speed;$(13_10)		}$(13_10)		else if(y > 640 && y < 768){$(13_10)			y -= speed;$(13_10)		}$(13_10)	}$(13_10)}$(13_10)		"
+/// @DnDArgument : "code" "if(x > 650){$(13_10)	if(abs(y-128)<speed){$(13_10)		y = 128$(13_10)	} else if (abs(y-384)<speed){$(13_10)		y = 384$(13_10)	} else if (abs(y-640)<speed){$(13_10)		y = 640$(13_10)	} else {$(13_10)	$(13_10)		if(y < 256 and y > 128){$(13_10)			y -= speed;$(13_10)		}$(13_10)		else if(y < 128){$(13_10)			y += speed;$(13_10)		}$(13_10)		else if(y >= 256 && y < 384){$(13_10)			y += speed;$(13_10)		}$(13_10)		else if(y > 384 && y < 512){$(13_10)			y -= speed;$(13_10)		}$(13_10)		else if(y >= 512 && y < 640){$(13_10)			y += speed;$(13_10)		}$(13_10)		else if(y > 640 && y < 768){$(13_10)			y -= speed;$(13_10)		}$(13_10)	}$(13_10)}$(13_10)		"
 if(x > 650){
-	if(abs(y-128)<5){
+	if(abs(y-128)<speed){
 		y = 128
-	} else if (abs(y-384)<5){
+	} else if (abs(y-384)<speed){
 		y = 384
-	} else if (abs(y-640)<5){
+	} else if (abs(y-640)<speed){
 		y = 640
 	} else {
 	
@@ -110,6 +110,22 @@ if(x > 650){
 			y -= speed;
 		}
 	}
+}
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 75B8B85B
+/// @DnDArgument : "var" "x"
+/// @DnDArgument : "op" "2"
+/// @DnDArgument : "value" "650"
+if(x > 650)
+{
+	/// @DnDAction : YoYo Games.Movement.Set_Speed
+	/// @DnDVersion : 1
+	/// @DnDHash : 0F423068
+	/// @DnDParent : 75B8B85B
+	/// @DnDArgument : "speed" "HorizontalSpeedFast"
+	speed = HorizontalSpeedFast;
 }
 
 /// @DnDAction : YoYo Games.Common.If_Variable
