@@ -167,6 +167,7 @@ if(global.lvlType == "Add")
 	/// @DnDVersion : 1
 	/// @DnDHash : 108ECDAB
 	/// @DnDParent : 3740D189
+<<<<<<< HEAD
 	/// @DnDArgument : "code" "while(solutionIncorrect1 == solutionCorrect || $(13_10)	  solutionIncorrect2 == solutionCorrect || $(13_10)	  solutionIncorrect2 == solutionIncorrect1){$(13_10)	solutionIncorrect1 = irandom_range(addRangeSolutionLower,addRangeSolutionUpper);$(13_10)	solutionIncorrect2 = irandom_range(addRangeSolutionLower,addRangeSolutionUpper);$(13_10)}"
 	while(solutionIncorrect1 == solutionCorrect || 
 		  solutionIncorrect2 == solutionCorrect || 
@@ -207,6 +208,24 @@ if(global.lvlType == "Subtract")
 		subtractRangeUpper = 20;
 		subtractRangeSolutionLower = 0;
 		subtractRangeSolutionUpper = 19;
+=======
+	/// @DnDArgument : "code" "while(solutionIncorrect1 == solutionCorrect || solutionIncorrect2 == solutionCorrect || solutionIncorrect2 == solutionIncorrect1){$(13_10)	solutionIncorrect1 = irandom_range(2,20);$(13_10)	solutionIncorrect2 = irandom_range(2,20);$(13_10)}$(13_10)$(13_10)pos1 = 108;$(13_10)pos2 = 108 + 256;$(13_10)pos3 = 108 + 256 + 256;$(13_10)posArray[0] = pos1;$(13_10)posArray[1] = pos2;$(13_10)posArray[2] = pos3;$(13_10)$(13_10)sel1 = choose(0,1,2);$(13_10)randomPos1 = posArray[sel1];$(13_10)posArray[sel1] = 0;$(13_10)$(13_10)randomPos2 = 0;$(13_10)while (randomPos2 = 0){$(13_10)sel2 = choose(0,1,2);$(13_10)randomPos2 = posArray[sel2];$(13_10)}$(13_10)posArray[sel2] = 0;$(13_10)$(13_10)randomPos3 = 0;$(13_10)while (randomPos3 = 0){$(13_10)sel3 = choose(0,1,2);$(13_10)randomPos3 = posArray[sel3];$(13_10)}$(13_10)$(13_10)rockNumber = choose(0, 1, 2, 3);$(13_10)for(i = 0; i < rockNumber; i++){$(13_10)	instance_create_depth(irandom_range(288, 608), irandom_range(0, 720), 0, obj_rockObstacle);$(13_10)}"
+	while(solutionIncorrect1 == solutionCorrect || solutionIncorrect2 == solutionCorrect || solutionIncorrect2 == solutionIncorrect1){
+		solutionIncorrect1 = irandom_range(2,20);
+		solutionIncorrect2 = irandom_range(2,20);
+	}
+	
+	pos1 = 108;
+	pos2 = 108 + 256;
+	pos3 = 108 + 256 + 256;
+	posArray[0] = pos1;
+	posArray[1] = pos2;
+	posArray[2] = pos3;
+	
+	sel1 = choose(0,1,2);
+	randomPos1 = posArray[sel1];
+	posArray[sel1] = 0;
+>>>>>>> cd3604e42dd04de44c66624b2d0ee57db13fe96b
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -317,9 +336,15 @@ if(global.lvlType == "Subtract")
 		solutionIncorrect1 = operand2 - operand1;
 		solutionIncorrect2 = solutionCorrect;
 	}
+	
+	rockNumber = choose(0, 1, 2, 3);
+	for(i = 0; i < rockNumber; i++){
+		instance_create_depth(irandom_range(288, 608), irandom_range(0, 720), 0, obj_rockObstacle);
+	}
 
 	/// @DnDAction : YoYo Games.Common.Execute_Code
 	/// @DnDVersion : 1
+<<<<<<< HEAD
 	/// @DnDHash : 620637E8
 	/// @DnDParent : 312689C8
 	/// @DnDArgument : "code" "while(solutionIncorrect1 == solutionCorrect || $(13_10)	  solutionIncorrect2 == solutionCorrect || $(13_10)	  solutionIncorrect2 == solutionIncorrect1){$(13_10)	solutionIncorrect1 = irandom_range(subtractRangeSolutionLower,subtractRangeSolutionUpper);$(13_10)	solutionIncorrect2 = irandom_range(subtractRangeSolutionLower,subtractRangeSolutionUpper);$(13_10)}"
@@ -330,6 +355,16 @@ if(global.lvlType == "Subtract")
 		solutionIncorrect2 = irandom_range(subtractRangeSolutionLower,subtractRangeSolutionUpper);
 	}
 }
+=======
+	/// @DnDHash : 2F294577
+	/// @DnDParent : 3740D189
+	/// @DnDArgument : "xpos" "650"
+	/// @DnDArgument : "ypos" "randomPos1"
+	/// @DnDArgument : "var" "a"
+	/// @DnDArgument : "objectid" "obj_correctAns"
+	/// @DnDSaveInfo : "objectid" "43b5d379-d68e-4a07-9b07-fa2321da43e6"
+	a = instance_create_layer(650, randomPos1, "Instances", obj_correctAns);
+>>>>>>> cd3604e42dd04de44c66624b2d0ee57db13fe96b
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1

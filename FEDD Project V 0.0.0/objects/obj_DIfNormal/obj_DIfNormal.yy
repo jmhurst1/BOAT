@@ -23,6 +23,7 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "23bb03b8-a1a7-4b88-9c0c-e6368513e60a"
+<<<<<<< HEAD
         },
         {
             "id": "edcccc4d-e5aa-4921-b51e-08b7356a61a3",
@@ -33,6 +34,8 @@
             "enumb": 0,
             "eventtype": 8,
             "m_owner": "23bb03b8-a1a7-4b88-9c0c-e6368513e60a"
+=======
+>>>>>>> cd3604e42dd04de44c66624b2d0ee57db13fe96b
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

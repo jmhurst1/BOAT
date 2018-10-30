@@ -10,5 +10,10 @@ draw_set_font(font_Question);
 /// @DnDHash : 1541037C
 /// @DnDArgument : "x" "432 "
 /// @DnDArgument : "caption" ""
+<<<<<<< HEAD
 /// @DnDArgument : "var" "string(operand1) + string(operator) + string(operand2) + "= ?""
 draw_text(432 , 0,  + string(string(operand1) + string(operator) + string(operand2) + "= ?"));
+=======
+/// @DnDArgument : "var" "string(operand1) + "+" + string(operand2) + "= ?""
+draw_text(432 , 0,  + string(string(operand1) + "+" + string(operand2) + "= ?"));
+>>>>>>> cd3604e42dd04de44c66624b2d0ee57db13fe96b
