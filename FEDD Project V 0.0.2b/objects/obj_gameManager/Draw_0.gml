@@ -174,3 +174,27 @@ if(room == rm_menu)
 	/// @DnDArgument : "fill" "1"
 	draw_rectangle(395, 85, 642, 88, 0);
 }
+
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 598D4F0E
+/// @DnDArgument : "var" "room"
+/// @DnDArgument : "value" "rm_howToPlay"
+if(room == rm_howToPlay)
+{
+	/// @DnDAction : YoYo Games.Drawing.Set_Font
+	/// @DnDVersion : 1
+	/// @DnDHash : 411F3A88
+	/// @DnDParent : 598D4F0E
+	/// @DnDArgument : "font" "font_Question"
+	/// @DnDSaveInfo : "font" "7c3faf20-ac58-4ca3-8078-2a674cf1a626"
+	draw_set_font(font_Question);
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value
+	/// @DnDVersion : 1
+	/// @DnDHash : 10DC3961
+	/// @DnDParent : 598D4F0E
+	/// @DnDArgument : "caption" """"
+	/// @DnDArgument : "var" ""hi\nhi""
+	draw_text(0, 0, string("") + string("hi\nhi"));
+}

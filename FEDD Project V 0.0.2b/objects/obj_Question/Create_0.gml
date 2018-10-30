@@ -458,8 +458,8 @@ if(global.lvlType == "Multiply")
 		/// @DnDArgument : "expr_1" "irandom_range(multiplyRangeLower,multiplyRangeUpper)"
 		/// @DnDArgument : "expr_2" "irandom_range(multiplyRangeLower,multiplyRangeUpper)"
 		/// @DnDArgument : "expr_3" "operand1 * operand2"
-		/// @DnDArgument : "expr_4" "operand1 * (operand2 + 1)"
-		/// @DnDArgument : "expr_5" "operand1 * (operand2 - 1)"
+		/// @DnDArgument : "expr_4" "operand1 * (operand2 + choose(-1,1))"
+		/// @DnDArgument : "expr_5" "(operand1 + choose(-1,1)) * operand2"
 		/// @DnDArgument : "var" "operator"
 		/// @DnDArgument : "var_1" "operand1"
 		/// @DnDArgument : "var_2" "operand2"
@@ -470,8 +470,8 @@ if(global.lvlType == "Multiply")
 		operand1 = irandom_range(multiplyRangeLower,multiplyRangeUpper);
 		operand2 = irandom_range(multiplyRangeLower,multiplyRangeUpper);
 		solutionCorrect = operand1 * operand2;
-		solutionIncorrect1 = operand1 * (operand2 + 1);
-		solutionIncorrect2 = operand1 * (operand2 - 1);
+		solutionIncorrect1 = operand1 * (operand2 + choose(-1,1));
+		solutionIncorrect2 = (operand1 + choose(-1,1)) * operand2;
 	}
 
 	/// @DnDAction : YoYo Games.Common.Execute_Code
@@ -567,7 +567,7 @@ if(global.lvlType == "Divide")
 			/// @DnDArgument : "expr" "1"
 			/// @DnDArgument : "expr_1" "12"
 			/// @DnDArgument : "expr_2" "1"
-			/// @DnDArgument : "expr_3" "144"
+			/// @DnDArgument : "expr_3" "12"
 			/// @DnDArgument : "var" "divideRangeLower"
 			/// @DnDArgument : "var_1" "divideRangeUpper"
 			/// @DnDArgument : "var_2" "divideRangeSolutionLower"
@@ -575,7 +575,7 @@ if(global.lvlType == "Divide")
 			divideRangeLower = 1;
 			divideRangeUpper = 12;
 			divideRangeSolutionLower = 1;
-			divideRangeSolutionUpper = 144;
+			divideRangeSolutionUpper = 12;
 		}
 	
 		/// @DnDAction : YoYo Games.Common.If_Variable
@@ -593,16 +593,16 @@ if(global.lvlType == "Divide")
 			/// @DnDParent : 675EF335
 			/// @DnDArgument : "expr" "3"
 			/// @DnDArgument : "expr_1" "13"
-			/// @DnDArgument : "expr_2" "9"
-			/// @DnDArgument : "expr_3" "169"
+			/// @DnDArgument : "expr_2" "3"
+			/// @DnDArgument : "expr_3" "13"
 			/// @DnDArgument : "var" "divideRangeLower"
 			/// @DnDArgument : "var_1" "divideRangeUpper"
 			/// @DnDArgument : "var_2" "divideRangeSolutionLower"
 			/// @DnDArgument : "var_3" "divideRangeSolutionUpper"
 			divideRangeLower = 3;
 			divideRangeUpper = 13;
-			divideRangeSolutionLower = 9;
-			divideRangeSolutionUpper = 169;
+			divideRangeSolutionLower = 3;
+			divideRangeSolutionUpper = 13;
 		}
 	
 		/// @DnDAction : YoYo Games.Common.Variable
@@ -614,8 +614,8 @@ if(global.lvlType == "Divide")
 		/// @DnDArgument : "expr_1" "irandom_range(divideRangeLower,divideRangeUpper)"
 		/// @DnDArgument : "expr_2" "irandom_range(divideRangeLower,divideRangeUpper)"
 		/// @DnDArgument : "expr_3" "solutionCorrect * operand2"
-		/// @DnDArgument : "expr_4" "solutionCorrect - 1"
-		/// @DnDArgument : "expr_5" "solutionCorrect + 1"
+		/// @DnDArgument : "expr_4" "solutionCorrect + choose(-2,-1,1,2)"
+		/// @DnDArgument : "expr_5" "solutionCorrect + choose(-2,-1,1,2)"
 		/// @DnDArgument : "var" "operator"
 		/// @DnDArgument : "var_1" "solutionCorrect"
 		/// @DnDArgument : "var_2" "operand2"
@@ -626,8 +626,26 @@ if(global.lvlType == "Divide")
 		solutionCorrect = irandom_range(divideRangeLower,divideRangeUpper);
 		operand2 = irandom_range(divideRangeLower,divideRangeUpper);
 		operand1 = solutionCorrect * operand2;
-		solutionIncorrect1 = solutionCorrect - 1;
-		solutionIncorrect2 = solutionCorrect + 1;
+		solutionIncorrect1 = solutionCorrect + choose(-2,-1,1,2);
+		solutionIncorrect2 = solutionCorrect + choose(-2,-1,1,2);
+	
+		/// @DnDAction : YoYo Games.Common.If_Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 00E5F28F
+		/// @DnDParent : 0EA5AC98
+		/// @DnDArgument : "var" "solutionIncorrect1"
+		/// @DnDArgument : "value" "solutionIncorrect2"
+		if(solutionIncorrect1 == solutionIncorrect2)
+		{
+			/// @DnDAction : YoYo Games.Common.Variable
+			/// @DnDVersion : 1
+			/// @DnDHash : 73AC3FF0
+			/// @DnDParent : 00E5F28F
+			/// @DnDArgument : "expr" "+ choose(-1,1)"
+			/// @DnDArgument : "expr_relative" "1"
+			/// @DnDArgument : "var" "solutionIncorrect2"
+			solutionIncorrect2 += + choose(-1,1);
+		}
 	}
 
 	/// @DnDAction : YoYo Games.Common.Execute_Code
