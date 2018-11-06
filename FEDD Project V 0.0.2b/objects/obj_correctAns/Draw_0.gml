@@ -1,3 +1,10 @@
+/// @DnDAction : YoYo Games.Drawing.Set_Color
+/// @DnDVersion : 1
+/// @DnDHash : 3560F2BA
+/// @DnDArgument : "color" "color"
+draw_set_colour(color & $ffffff);
+draw_set_alpha((color >> 24) / $ff);
+
 /// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1
 /// @DnDHash : 421A9025
@@ -13,3 +20,9 @@ draw_set_font(font_Question);
 /// @DnDArgument : "caption" ""
 /// @DnDArgument : "var" "text"
 draw_text(x + 0, y + 0,  + string(text));
+
+/// @DnDAction : YoYo Games.Drawing.Set_Color
+/// @DnDVersion : 1
+/// @DnDHash : 7B468209
+draw_set_colour($FFFFFFFF & $ffffff);
+draw_set_alpha(($FFFFFFFF >> 24) / $ff);

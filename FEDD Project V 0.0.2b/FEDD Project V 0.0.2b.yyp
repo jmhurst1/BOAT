@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "5ccc2f51-a185-44c4-b7bf-d8990c10552b",
+            "Value": {
+                "id": "a3142b6a-2b1f-41b3-b3bd-7570ee610b83",
+                "resourcePath": "sounds\\snd_PiratesOof\\snd_PiratesOof.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "6330f581-d926-4a7f-aa75-243dd228e9f0",
             "Value": {
                 "id": "15e210f5-f919-46f0-895d-e919e39c94db",
@@ -399,6 +407,14 @@
             }
         },
         {
+            "Key": "c78070c5-55bb-4286-afb3-4214ad9b9426",
+            "Value": {
+                "id": "db29e67c-d70c-41d1-b0f8-e7c43f7ec1d1",
+                "resourcePath": "sprites\\spr_plants\\spr_plants.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "33c226f3-a344-46da-b071-e6bef521b548",
@@ -419,6 +435,14 @@
             "Value": {
                 "id": "ed40a4f8-657c-4f58-bd1d-243ddc445025",
                 "resourcePath": "sprites\\spr_giantRock\\spr_giantRock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d28bf877-8f21-4a0b-901e-2cb5225d21e7",
+            "Value": {
+                "id": "a2f30357-6d35-49fd-8340-056bac4d056b",
+                "resourcePath": "sprites\\spr_BackgroundWood\\spr_BackgroundWood.yy",
                 "resourceType": "GMSprite"
             }
         },

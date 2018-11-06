@@ -44,6 +44,12 @@ if(room == rm_menu)
 	/// @DnDArgument : "room" "rm_howToPlay"
 	/// @DnDSaveInfo : "room" "a5945fea-66c1-45bc-8902-b07cbcc30014"
 	room_goto(rm_howToPlay);
+
+	/// @DnDAction : YoYo Games.Audio.Stop_All_Audio
+	/// @DnDVersion : 1
+	/// @DnDHash : 2A6207AD
+	/// @DnDParent : 2A28AF85
+	audio_stop_all();
 }
 
 /// @DnDAction : YoYo Games.Common.If_Variable
