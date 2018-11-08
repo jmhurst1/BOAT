@@ -53,15 +53,82 @@ if(room == rm_level)
 /// @DnDArgument : "value" "rm_title"
 if(room == rm_title)
 {
+	/// @DnDAction : YoYo Games.Drawing.Set_Font
+	/// @DnDVersion : 1
+	/// @DnDHash : 6C95DEBC
+	/// @DnDParent : 10007743
+	/// @DnDArgument : "font" "font_Title"
+	/// @DnDSaveInfo : "font" "9e3ac1b0-146f-4fe6-baf2-08f2f7bc28c3"
+	draw_set_font(font_Title);
+
 	/// @DnDAction : YoYo Games.Drawing.Draw_Value
 	/// @DnDVersion : 1
 	/// @DnDHash : 317A62B1
 	/// @DnDParent : 10007743
-	/// @DnDArgument : "x" "room_width / 2"
+	/// @DnDArgument : "x" "room_width / 2 - 150"
+	/// @DnDArgument : "y" "room_height / 2 - 175"
+	/// @DnDArgument : "caption" """"
+	/// @DnDArgument : "var" ""BOAT""
+	draw_text(room_width / 2 - 150, room_height / 2 - 175, string("") + string("BOAT"));
+
+	/// @DnDAction : YoYo Games.Drawing.Set_Font
+	/// @DnDVersion : 1
+	/// @DnDHash : 78961F7F
+	/// @DnDParent : 10007743
+	/// @DnDArgument : "font" "font_Question"
+	/// @DnDSaveInfo : "font" "7c3faf20-ac58-4ca3-8078-2a674cf1a626"
+	draw_set_font(font_Question);
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value
+	/// @DnDVersion : 1
+	/// @DnDHash : 18498C6B
+	/// @DnDParent : 10007743
+	/// @DnDArgument : "x" "room_width / 2 - 220"
 	/// @DnDArgument : "y" "room_height / 2"
 	/// @DnDArgument : "caption" """"
-	/// @DnDArgument : "var" ""BOAT/nA J-MAD Games Production""
-	draw_text(room_width / 2, room_height / 2, string("") + string("BOAT/nA J-MAD Games Production"));
+	/// @DnDArgument : "var" ""A J-MAD Games""
+	draw_text(room_width / 2 - 220, room_height / 2, string("") + string("A J-MAD Games"));
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value
+	/// @DnDVersion : 1
+	/// @DnDHash : 213F2E0B
+	/// @DnDParent : 10007743
+	/// @DnDArgument : "x" "room_width / 2 - 135"
+	/// @DnDArgument : "y" "room_height / 2 + 50"
+	/// @DnDArgument : "caption" """"
+	/// @DnDArgument : "var" ""Production""
+	draw_text(room_width / 2 - 135, room_height / 2 + 50, string("") + string("Production"));
+
+	/// @DnDAction : YoYo Games.Drawing.Set_Font
+	/// @DnDVersion : 1
+	/// @DnDHash : 189078D9
+	/// @DnDParent : 10007743
+	/// @DnDArgument : "font" "font_Score"
+	/// @DnDSaveInfo : "font" "de924acb-32b3-4334-828f-4122ecddff6a"
+	draw_set_font(font_Score);
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value
+	/// @DnDVersion : 1
+	/// @DnDHash : 38B21A7A
+	/// @DnDParent : 10007743
+	/// @DnDArgument : "x" "room_width / 2 - 160"
+	/// @DnDArgument : "y" "room_height / 2 + 125"
+	/// @DnDArgument : "caption" """"
+	/// @DnDArgument : "var" ""Press Enter to Continue""
+	draw_text(room_width / 2 - 160, room_height / 2 + 125, string("") + string("Press Enter to Continue"));
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Sprite_Transformed
+	/// @DnDVersion : 1
+	/// @DnDHash : 5975A4AB
+	/// @DnDParent : 10007743
+	/// @DnDArgument : "x" "room_width / 2 + 325"
+	/// @DnDArgument : "y" "room_height / 2 - 120"
+	/// @DnDArgument : "xscale" "3.5"
+	/// @DnDArgument : "yscale" "3.5"
+	/// @DnDArgument : "sprite" "spr_HowToPlay"
+	/// @DnDArgument : "frame" "1"
+	/// @DnDSaveInfo : "sprite" "4a2f99ec-44c4-40f8-bd7b-d8e78e1df40a"
+	draw_sprite_ext(spr_HowToPlay, 1, room_width / 2 + 325, room_height / 2 - 120, 3.5, 3.5, 0, $FFFFFFFF & $ffffff, ($FFFFFFFF >> 24) / $ff);
 }
 
 /// @DnDAction : YoYo Games.Common.If_Variable
@@ -191,4 +258,22 @@ if(room == rm_howToPlay)
 	/// @DnDArgument : "sprite" "spr_HowToPlay"
 	/// @DnDSaveInfo : "sprite" "4a2f99ec-44c4-40f8-bd7b-d8e78e1df40a"
 	draw_sprite(spr_HowToPlay, 0, room_width / 2, room_height / 2);
+
+	/// @DnDAction : YoYo Games.Drawing.Set_Font
+	/// @DnDVersion : 1
+	/// @DnDHash : 570150F6
+	/// @DnDParent : 598D4F0E
+	/// @DnDArgument : "font" "font_Score"
+	/// @DnDSaveInfo : "font" "de924acb-32b3-4334-828f-4122ecddff6a"
+	draw_set_font(font_Score);
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value
+	/// @DnDVersion : 1
+	/// @DnDHash : 16AD4487
+	/// @DnDParent : 598D4F0E
+	/// @DnDArgument : "x" "700"
+	/// @DnDArgument : "y" "728"
+	/// @DnDArgument : "caption" """"
+	/// @DnDArgument : "var" ""Press Enter to Continue""
+	draw_text(700, 728, string("") + string("Press Enter to Continue"));
 }
