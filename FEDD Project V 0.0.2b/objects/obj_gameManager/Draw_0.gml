@@ -53,15 +53,15 @@ if(room == rm_level)
 /// @DnDArgument : "value" "rm_title"
 if(room == rm_title)
 {
-	/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value
 	/// @DnDVersion : 1
-	/// @DnDHash : 2A45F7AB
+	/// @DnDHash : 317A62B1
 	/// @DnDParent : 10007743
 	/// @DnDArgument : "x" "room_width / 2"
 	/// @DnDArgument : "y" "room_height / 2"
-	/// @DnDArgument : "sprite" "spr_Title"
-	/// @DnDSaveInfo : "sprite" "4a2f99ec-44c4-40f8-bd7b-d8e78e1df40a"
-	draw_sprite(spr_Title, 0, room_width / 2, room_height / 2);
+	/// @DnDArgument : "caption" """"
+	/// @DnDArgument : "var" ""BOAT/nA J-MAD Games Production""
+	draw_text(room_width / 2, room_height / 2, string("") + string("BOAT/nA J-MAD Games Production"));
 }
 
 /// @DnDAction : YoYo Games.Common.If_Variable
@@ -182,19 +182,13 @@ if(room == rm_menu)
 /// @DnDArgument : "value" "rm_howToPlay"
 if(room == rm_howToPlay)
 {
-	/// @DnDAction : YoYo Games.Drawing.Set_Font
+	/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
 	/// @DnDVersion : 1
-	/// @DnDHash : 411F3A88
+	/// @DnDHash : 1C3CDD17
 	/// @DnDParent : 598D4F0E
-	/// @DnDArgument : "font" "font_Question"
-	/// @DnDSaveInfo : "font" "7c3faf20-ac58-4ca3-8078-2a674cf1a626"
-	draw_set_font(font_Question);
-
-	/// @DnDAction : YoYo Games.Drawing.Draw_Value
-	/// @DnDVersion : 1
-	/// @DnDHash : 10DC3961
-	/// @DnDParent : 598D4F0E
-	/// @DnDArgument : "caption" """"
-	/// @DnDArgument : "var" ""hi\nhi""
-	draw_text(0, 0, string("") + string("hi\nhi"));
+	/// @DnDArgument : "x" "room_width / 2"
+	/// @DnDArgument : "y" "room_height / 2"
+	/// @DnDArgument : "sprite" "spr_HowToPlay"
+	/// @DnDSaveInfo : "sprite" "4a2f99ec-44c4-40f8-bd7b-d8e78e1df40a"
+	draw_sprite(spr_HowToPlay, 0, room_width / 2, room_height / 2);
 }

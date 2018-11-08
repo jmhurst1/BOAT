@@ -130,7 +130,7 @@
             "Key": "4a2f99ec-44c4-40f8-bd7b-d8e78e1df40a",
             "Value": {
                 "id": "95c049d2-e600-4f1b-943a-c1a335c17bac",
-                "resourcePath": "sprites\\spr_Title\\spr_Title.yy",
+                "resourcePath": "sprites\\spr_HowToPlay\\spr_HowToPlay.yy",
                 "resourceType": "GMSprite"
             }
         },
