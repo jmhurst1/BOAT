@@ -50,3 +50,11 @@ global.victoryStatus = "";
 /// @DnDArgument : "expr" "20"
 /// @DnDArgument : "var" "global.victoryThreshold"
 global.victoryThreshold = 20;
+
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1
+/// @DnDHash : 64D48D23
+/// @DnDArgument : "soundid" "snd_Menu"
+/// @DnDArgument : "loop" "1"
+/// @DnDSaveInfo : "soundid" "25db19f3-581f-4466-85d6-41f80d36ed01"
+audio_play_sound(snd_Menu, 0, 1);

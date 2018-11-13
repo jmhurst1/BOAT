@@ -1,3 +1,20 @@
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 0C5CCA06
+/// @DnDArgument : "var" "global.lvlType"
+/// @DnDArgument : "not" "1"
+/// @DnDArgument : "value" ""Add""
+if(!(global.lvlType == "Add"))
+{
+	/// @DnDAction : YoYo Games.Audio.Play_Audio
+	/// @DnDVersion : 1
+	/// @DnDHash : 650BAFE2
+	/// @DnDParent : 0C5CCA06
+	/// @DnDArgument : "soundid" "snd_Select"
+	/// @DnDSaveInfo : "soundid" "8741ecb1-8135-4207-901a-04dd2d4a6066"
+	audio_play_sound(snd_Select, 0, 0);
+}
+
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
 /// @DnDHash : 1F29C7B9

@@ -129,6 +129,17 @@ if(room == rm_title)
 	/// @DnDArgument : "frame" "1"
 	/// @DnDSaveInfo : "sprite" "4a2f99ec-44c4-40f8-bd7b-d8e78e1df40a"
 	draw_sprite_ext(spr_HowToPlay, 1, room_width / 2 + 325, room_height / 2 - 120, 3.5, 3.5, 0, $FFFFFFFF & $ffffff, ($FFFFFFFF >> 24) / $ff);
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Sprite_Transformed
+	/// @DnDVersion : 1
+	/// @DnDHash : 471BA83D
+	/// @DnDParent : 10007743
+	/// @DnDArgument : "x" "room_width / 2 - 325"
+	/// @DnDArgument : "y" "room_height / 2 - 120"
+	/// @DnDArgument : "sprite" "spr_HowToPlay"
+	/// @DnDArgument : "frame" "2"
+	/// @DnDSaveInfo : "sprite" "4a2f99ec-44c4-40f8-bd7b-d8e78e1df40a"
+	draw_sprite_ext(spr_HowToPlay, 2, room_width / 2 - 325, room_height / 2 - 120, 1, 1, 0, $FFFFFFFF & $ffffff, ($FFFFFFFF >> 24) / $ff);
 }
 
 /// @DnDAction : YoYo Games.Common.If_Variable
