@@ -27,6 +27,15 @@ if(!(room == rm_level))
 		/// @DnDHash : 2501BD37
 		/// @DnDParent : 4A59EA5E
 		audio_stop_all();
+	
+		/// @DnDAction : YoYo Games.Audio.Play_Audio
+		/// @DnDVersion : 1
+		/// @DnDHash : 4337A4B4
+		/// @DnDParent : 4A59EA5E
+		/// @DnDArgument : "soundid" "snd_Menu"
+		/// @DnDArgument : "loop" "1"
+		/// @DnDSaveInfo : "soundid" "25db19f3-581f-4466-85d6-41f80d36ed01"
+		audio_play_sound(snd_Menu, 0, 1);
 	}
 
 	/// @DnDAction : YoYo Games.Common.Else
