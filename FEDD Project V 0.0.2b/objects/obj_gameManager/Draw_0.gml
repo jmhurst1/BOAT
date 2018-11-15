@@ -114,8 +114,28 @@ if(room == rm_title)
 	/// @DnDArgument : "x" "room_width / 2 - 160"
 	/// @DnDArgument : "y" "room_height / 2 + 125"
 	/// @DnDArgument : "caption" """"
+	/// @DnDArgument : "var" ""For Students In Grades""
+	draw_text(room_width / 2 - 160, room_height / 2 + 125, string("") + string("For Students In Grades"));
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value
+	/// @DnDVersion : 1
+	/// @DnDHash : 25B2ACDC
+	/// @DnDParent : 10007743
+	/// @DnDArgument : "x" "room_width / 2 - 90"
+	/// @DnDArgument : "y" "room_height / 2 + 160"
+	/// @DnDArgument : "caption" """"
+	/// @DnDArgument : "var" ""2 through 5""
+	draw_text(room_width / 2 - 90, room_height / 2 + 160, string("") + string("2 through 5"));
+
+	/// @DnDAction : YoYo Games.Drawing.Draw_Value
+	/// @DnDVersion : 1
+	/// @DnDHash : 7098B2FC
+	/// @DnDParent : 10007743
+	/// @DnDArgument : "x" "room_width / 2 - 160"
+	/// @DnDArgument : "y" "room_height / 2 + 225"
+	/// @DnDArgument : "caption" """"
 	/// @DnDArgument : "var" ""Press Enter to Continue""
-	draw_text(room_width / 2 - 160, room_height / 2 + 125, string("") + string("Press Enter to Continue"));
+	draw_text(room_width / 2 - 160, room_height / 2 + 225, string("") + string("Press Enter to Continue"));
 
 	/// @DnDAction : YoYo Games.Drawing.Draw_Sprite_Transformed
 	/// @DnDVersion : 1
@@ -169,21 +189,21 @@ if(room == rm_end)
 		/// @DnDVersion : 1
 		/// @DnDHash : 79C905D0
 		/// @DnDParent : 21C3F228
-		/// @DnDArgument : "x" "room_width / 2 - 120"
-		/// @DnDArgument : "y" "room_height / 2 - 80"
+		/// @DnDArgument : "x" "room_width / 2 - 133"
+		/// @DnDArgument : "y" "room_height / 2 - 70"
 		/// @DnDArgument : "caption" """"
 		/// @DnDArgument : "var" ""YOU WIN""
-		draw_text(room_width / 2 - 120, room_height / 2 - 80, string("") + string("YOU WIN"));
+		draw_text(room_width / 2 - 133, room_height / 2 - 70, string("") + string("YOU WIN"));
 	
 		/// @DnDAction : YoYo Games.Drawing.Draw_Value
 		/// @DnDVersion : 1
-		/// @DnDHash : 426895A8
+		/// @DnDHash : 4736C414
 		/// @DnDParent : 21C3F228
-		/// @DnDArgument : "x" "room_width / 2 - 132"
-		/// @DnDArgument : "y" "room_height / 2 + 40"
+		/// @DnDArgument : "x" "room_width / 2 - 225"
+		/// @DnDArgument : "y" "room_height / 2 + 20"
 		/// @DnDArgument : "caption" ""Your score was ""
 		/// @DnDArgument : "var" "score"
-		draw_text(room_width / 2 - 132, room_height / 2 + 40, string("Your score was ") + string(score));
+		draw_text(room_width / 2 - 225, room_height / 2 + 20, string("Your score was ") + string(score));
 	}
 
 	/// @DnDAction : YoYo Games.Common.If_Variable
@@ -198,21 +218,21 @@ if(room == rm_end)
 		/// @DnDVersion : 1
 		/// @DnDHash : 5369678B
 		/// @DnDParent : 09B26D37
-		/// @DnDArgument : "x" "room_width / 2 - 120"
-		/// @DnDArgument : "y" "room_height / 2 - 80"
+		/// @DnDArgument : "x" "room_width / 2 - 175"
+		/// @DnDArgument : "y" "room_height / 2 - 70"
 		/// @DnDArgument : "caption" """"
 		/// @DnDArgument : "var" ""GAME OVER""
-		draw_text(room_width / 2 - 120, room_height / 2 - 80, string("") + string("GAME OVER"));
+		draw_text(room_width / 2 - 175, room_height / 2 - 70, string("") + string("GAME OVER"));
 	
 		/// @DnDAction : YoYo Games.Drawing.Draw_Value
 		/// @DnDVersion : 1
 		/// @DnDHash : 312434CA
 		/// @DnDParent : 09B26D37
-		/// @DnDArgument : "x" "room_width / 2 - 132"
-		/// @DnDArgument : "y" "room_height / 2 + 40"
+		/// @DnDArgument : "x" "room_width / 2 - 225"
+		/// @DnDArgument : "y" "room_height / 2 + 20"
 		/// @DnDArgument : "caption" ""Your score was ""
 		/// @DnDArgument : "var" "score"
-		draw_text(room_width / 2 - 132, room_height / 2 + 40, string("Your score was ") + string(score));
+		draw_text(room_width / 2 - 225, room_height / 2 + 20, string("Your score was ") + string(score));
 	}
 }
 

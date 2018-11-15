@@ -109,8 +109,8 @@ if(x > room_width)
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 1F696E90
-/// @DnDArgument : "code" "if(x > 650){$(13_10)	if(abs(y-128)<speed){$(13_10)		y = 128$(13_10)	} else if (abs(y-384)<speed){$(13_10)		y = 384$(13_10)	} else if (abs(y-640)<speed){$(13_10)		y = 640$(13_10)	} else {$(13_10)	$(13_10)		if(y < 256 and y > 128){$(13_10)			y -= speed;$(13_10)		}$(13_10)		else if(y < 128){$(13_10)			y += speed;$(13_10)		}$(13_10)		else if(y >= 256 && y < 384){$(13_10)			y += speed;$(13_10)		}$(13_10)		else if(y > 384 && y < 512){$(13_10)			y -= speed;$(13_10)		}$(13_10)		else if(y >= 512 && y < 640){$(13_10)			y += speed;$(13_10)		}$(13_10)		else if(y > 640){$(13_10)			y -= speed;$(13_10)		}$(13_10)	}$(13_10)}$(13_10)		"
-if(x > 650){
+/// @DnDArgument : "code" "if(x > 700){$(13_10)	if(abs(y-128)<speed){$(13_10)		y = 128$(13_10)	} else if (abs(y-384)<speed){$(13_10)		y = 384$(13_10)	} else if (abs(y-640)<speed){$(13_10)		y = 640$(13_10)	} else {$(13_10)	$(13_10)		if(y < 256 and y > 128){$(13_10)			y -= speed;$(13_10)		}$(13_10)		else if(y < 128){$(13_10)			y += speed;$(13_10)		}$(13_10)		else if(y >= 256 && y < 384){$(13_10)			y += speed;$(13_10)		}$(13_10)		else if(y > 384 && y < 512){$(13_10)			y -= speed;$(13_10)		}$(13_10)		else if(y >= 512 && y < 640){$(13_10)			y += speed;$(13_10)		}$(13_10)		else if(y > 640){$(13_10)			y -= speed;$(13_10)		}$(13_10)	}$(13_10)}$(13_10)		"
+if(x > 700){
 	if(abs(y-128)<speed){
 		y = 128
 	} else if (abs(y-384)<speed){
@@ -145,8 +145,8 @@ if(x > 650){
 /// @DnDHash : 75B8B85B
 /// @DnDArgument : "var" "x"
 /// @DnDArgument : "op" "2"
-/// @DnDArgument : "value" "650"
-if(x > 650)
+/// @DnDArgument : "value" "700"
+if(x > 700)
 {
 	/// @DnDAction : YoYo Games.Movement.Set_Speed
 	/// @DnDVersion : 1
@@ -161,8 +161,8 @@ if(x > 650)
 /// @DnDHash : 7F06CF74
 /// @DnDArgument : "var" "x"
 /// @DnDArgument : "op" "3"
-/// @DnDArgument : "value" "650"
-if(x <= 650)
+/// @DnDArgument : "value" "700"
+if(x <= 700)
 {
 	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
 	/// @DnDVersion : 1
