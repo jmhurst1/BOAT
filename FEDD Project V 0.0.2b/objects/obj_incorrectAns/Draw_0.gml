@@ -1,11 +1,3 @@
-/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
-/// @DnDVersion : 1
-/// @DnDHash : 5EAFCD3C
-/// @DnDArgument : "y" "global.plantPos"
-/// @DnDArgument : "sprite" "spr_plants"
-/// @DnDSaveInfo : "sprite" "c78070c5-55bb-4286-afb3-4214ad9b9426"
-draw_sprite(spr_plants, 0, 0, global.plantPos);
-
 /// @DnDAction : YoYo Games.Drawing.Set_Color
 /// @DnDVersion : 1
 /// @DnDHash : 675C6CAC

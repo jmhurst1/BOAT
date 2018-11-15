@@ -24,9 +24,9 @@ rockY3 = irandom_range(30,750);
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 02542FD3
-/// @DnDArgument : "expr" "irandom_range(-384,384)"
+/// @DnDArgument : "expr" "irandom_range(-183,183)"
 /// @DnDArgument : "var" "global.plantPos"
-global.plantPos = irandom_range(-384,384);
+global.plantPos = irandom_range(-183,183);
 
 /// @DnDAction : YoYo Games.Instances.Create_Instance
 /// @DnDVersion : 1

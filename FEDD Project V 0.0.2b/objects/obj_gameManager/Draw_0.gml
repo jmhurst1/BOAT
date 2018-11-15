@@ -204,6 +204,16 @@ if(room == rm_end)
 		/// @DnDArgument : "caption" ""Your score was ""
 		/// @DnDArgument : "var" "score"
 		draw_text(room_width / 2 - 225, room_height / 2 + 20, string("Your score was ") + string(score));
+	
+		/// @DnDAction : YoYo Games.Drawing.Draw_Value
+		/// @DnDVersion : 1
+		/// @DnDHash : 3697A6C5
+		/// @DnDParent : 21C3F228
+		/// @DnDArgument : "x" "room_width / 2 - 160"
+		/// @DnDArgument : "y" "room_height / 2 + 125"
+		/// @DnDArgument : "caption" """"
+		/// @DnDArgument : "var" ""Press Enter to Continue""
+		draw_text(room_width / 2 - 160, room_height / 2 + 125, string("") + string("Press Enter to Continue"));
 	}
 
 	/// @DnDAction : YoYo Games.Common.If_Variable
@@ -233,6 +243,24 @@ if(room == rm_end)
 		/// @DnDArgument : "caption" ""Your score was ""
 		/// @DnDArgument : "var" "score"
 		draw_text(room_width / 2 - 225, room_height / 2 + 20, string("Your score was ") + string(score));
+	
+		/// @DnDAction : YoYo Games.Drawing.Set_Font
+		/// @DnDVersion : 1
+		/// @DnDHash : 6EA5D06B
+		/// @DnDParent : 09B26D37
+		/// @DnDArgument : "font" "font_Score"
+		/// @DnDSaveInfo : "font" "de924acb-32b3-4334-828f-4122ecddff6a"
+		draw_set_font(font_Score);
+	
+		/// @DnDAction : YoYo Games.Drawing.Draw_Value
+		/// @DnDVersion : 1
+		/// @DnDHash : 77FBFF05
+		/// @DnDParent : 09B26D37
+		/// @DnDArgument : "x" "room_width / 2 - 160"
+		/// @DnDArgument : "y" "room_height / 2 + 125"
+		/// @DnDArgument : "caption" """"
+		/// @DnDArgument : "var" ""Press Enter to Continue""
+		draw_text(room_width / 2 - 160, room_height / 2 + 125, string("") + string("Press Enter to Continue"));
 	}
 }
 
