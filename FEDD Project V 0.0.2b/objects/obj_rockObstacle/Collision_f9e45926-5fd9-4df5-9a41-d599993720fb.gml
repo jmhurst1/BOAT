@@ -30,4 +30,12 @@ if(collided == false)
 	/// @DnDArgument : "expr" "true"
 	/// @DnDArgument : "var" "collided"
 	collided = true;
+
+	/// @DnDAction : YoYo Games.Audio.Play_Audio
+	/// @DnDVersion : 1
+	/// @DnDHash : 0D39D815
+	/// @DnDParent : 18DAF70F
+	/// @DnDArgument : "soundid" "snd_Collision"
+	/// @DnDSaveInfo : "soundid" "85b371cd-5755-410c-9d20-270fce8c1f1c"
+	audio_play_sound(snd_Collision, 0, 0);
 }

@@ -1,3 +1,9 @@
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 68FDF260
+/// @DnDArgument : "var" "score"
+score = 0;
+
 /// @DnDAction : YoYo Games.Audio.Stop_Audio
 /// @DnDVersion : 1
 /// @DnDHash : 2C9D14F3

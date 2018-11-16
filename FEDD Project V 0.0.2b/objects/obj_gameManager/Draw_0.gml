@@ -205,6 +205,14 @@ if(room == rm_end)
 		/// @DnDArgument : "var" "score"
 		draw_text(room_width / 2 - 225, room_height / 2 + 20, string("Your score was ") + string(score));
 	
+		/// @DnDAction : YoYo Games.Drawing.Set_Font
+		/// @DnDVersion : 1
+		/// @DnDHash : 5C8E22A1
+		/// @DnDParent : 21C3F228
+		/// @DnDArgument : "font" "font_Score"
+		/// @DnDSaveInfo : "font" "de924acb-32b3-4334-828f-4122ecddff6a"
+		draw_set_font(font_Score);
+	
 		/// @DnDAction : YoYo Games.Drawing.Draw_Value
 		/// @DnDVersion : 1
 		/// @DnDHash : 3697A6C5
