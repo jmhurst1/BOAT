@@ -199,11 +199,11 @@ if(room == rm_end)
 		/// @DnDVersion : 1
 		/// @DnDHash : 7CC15D14
 		/// @DnDParent : 21C3F228
-		/// @DnDArgument : "code" "$(13_10)$(13_10)draw_text(room_width/2 -100, 0, "Best time");$(13_10)draw_text(room_width/2 -20, 64, string(ds_list_find_value(scoreList, 0)));$(13_10)draw_text(50, room_height / 2 + 20, "Your score was " + string(score) + " with a time of " + string(global.time));$(13_10)"
+		/// @DnDArgument : "code" "$(13_10)$(13_10)draw_text(room_width/2 -130, 0, "Best time");$(13_10)draw_text(room_width/2 -50, 64, string(ds_list_find_value(scoreList, 0)));$(13_10)draw_text(50, room_height / 2 + 20, "Your score was " + string(score) + " with a time of " + string(global.time));$(13_10)"
 		
 		
-		draw_text(room_width/2 -100, 0, "Best time");
-		draw_text(room_width/2 -20, 64, string(ds_list_find_value(scoreList, 0)));
+		draw_text(room_width/2 -130, 0, "Best time");
+		draw_text(room_width/2 -50, 64, string(ds_list_find_value(scoreList, 0)));
 		draw_text(50, room_height / 2 + 20, "Your score was " + string(score) + " with a time of " + string(global.time));
 	
 		/// @DnDAction : YoYo Games.Drawing.Set_Font
@@ -252,6 +252,14 @@ if(room == rm_end)
 		/// @DnDArgument : "caption" ""Your score was ""
 		/// @DnDArgument : "var" "score"
 		draw_text(room_width / 2 - 225, room_height / 2 + 20, string("Your score was ") + string(score));
+	
+		/// @DnDAction : YoYo Games.Common.Execute_Code
+		/// @DnDVersion : 1
+		/// @DnDHash : 51F1CA34
+		/// @DnDParent : 09B26D37
+		/// @DnDArgument : "code" "draw_text(room_width/2 -130, 0, "Best time");$(13_10)draw_text(room_width/2 -50, 64, string(ds_list_find_value(scoreList, 0)));"
+		draw_text(room_width/2 -130, 0, "Best time");
+		draw_text(room_width/2 -50, 64, string(ds_list_find_value(scoreList, 0)));
 	
 		/// @DnDAction : YoYo Games.Drawing.Set_Font
 		/// @DnDVersion : 1

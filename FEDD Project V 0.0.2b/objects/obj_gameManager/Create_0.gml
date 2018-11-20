@@ -6,8 +6,9 @@ randomize();
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 752DAD02
-/// @DnDArgument : "code" "scoreList = ds_list_create();"
+/// @DnDArgument : "code" "scoreList = ds_list_create();$(13_10)ds_list_add(scoreList, 300);"
 scoreList = ds_list_create();
+ds_list_add(scoreList, 300);
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
